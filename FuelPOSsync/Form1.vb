@@ -885,8 +885,8 @@ Public Class Form1
                 My.Computer.FileSystem.MoveFile(ImpPath & ImpFile, BakPath & ImpFile, True)
             End If
         Next
-        ' Sletter alt fra TEMP
-        For Each foundFile As String In My.Computer.FileSystem.GetFiles(FTPpath, Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly, "*.*")
+        ' Sletter *.ctf fra TEMP
+        For Each foundFile As String In My.Computer.FileSystem.GetFiles(FTPpath, Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly, "*.ctf")
             My.Computer.FileSystem.DeleteFile(foundFile)
         Next
         If filnr > startnr Then
@@ -926,8 +926,8 @@ Public Class Form1
                 My.Computer.FileSystem.MoveFile(ImpPath & ImpFile, BakPath & ImpFile, True)
             End If
         Next
-        ' Sletter alt fra TEMP
-        For Each foundFile As String In My.Computer.FileSystem.GetFiles(FTPpath, Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly, "*.*")
+        ' Sletter *.p fra TEMP
+        For Each foundFile As String In My.Computer.FileSystem.GetFiles(FTPpath, Microsoft.VisualBasic.FileIO.SearchOption.SearchTopLevelOnly, "*.p")
             My.Computer.FileSystem.DeleteFile(foundFile)
         Next
         If filnr > startnr Then
@@ -1717,7 +1717,7 @@ Public Class Form1
         'UpdateDayReportAzure()
         RTFile = True
         ZeroRT()
-        GetCTF() 'Trenger ikke denne for å lese filene på nytt  fra lokal disk Get files from FTP-server/VPN
+        'GetCTF() Trenger ikke denne for å lese filene på nytt fra lokal disk,  er hentet med Importer trans/GetCTF()
         MoveDayRPTFiles() 'Import to local database and Azure
     End Sub
 
