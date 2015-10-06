@@ -276,7 +276,7 @@
     <Content Include="ShoppingCart.aspx" />
     <Content Include="Site.Master" />
     <Content Include="Admin\Tanken.aspx" />
-    <Content Include="Admin\TankStatus.aspx" />
+    <Content Include="Vendor\TankStatus.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -296,6 +296,7 @@
     <Content Include="TankFormDataSet.xss">
       <DependentUpon>TankFormDataSet.xsd</DependentUpon>
     </Content>
+    <Content Include="Vendor\Web.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -538,11 +539,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>TankFormDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Admin\TankStatus.aspx.cs">
+    <Compile Include="Vendor\TankStatus.aspx.cs">
       <DependentUpon>TankStatus.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Admin\TankStatus.aspx.designer.cs">
+    <Compile Include="Vendor\TankStatus.aspx.designer.cs">
       <DependentUpon>TankStatus.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
