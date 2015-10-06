@@ -7,13 +7,13 @@ namespace TankForm.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.1-30610")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    public sealed partial class Oppdateringsstatus : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(Oppdateringsstatus));
         
         string IMigrationMetadata.Id
         {
-            get { return "201506181115444_InitialCreate"; }
+            get { return "201510061823192_Oppdateringsstatus"; }
         }
         
         string IMigrationMetadata.Source

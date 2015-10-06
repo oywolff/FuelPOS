@@ -21,7 +21,7 @@ namespace TankForm
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
             // Initialize the produkt database
-            Database.SetInitializer(new ProduktDatabaseInitializer());
+            // 20151006 Bruker Migrations Database.SetInitializer(new ProduktDatabaseInitializer());
 
             // Create the custom role and user.
             RoleActions roleActions = new RoleActions();

@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace TankForm.Models
 {
-    public class SystemStatus
+    public class Oppdateringsstatus
     {
         public int ID { get; set; }
         public int Stasjonsnr { get; set; }

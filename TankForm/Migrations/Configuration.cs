@@ -10,7 +10,6 @@ namespace TankForm.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "TankForm.Models.ProduktContext";
         }
 
         protected override void Seed(TankForm.Models.ProduktContext context)

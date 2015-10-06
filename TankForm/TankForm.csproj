@@ -447,26 +447,22 @@
     </Compile>
     <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\TankStatusActions.cs" />
-    <Compile Include="Migrations\201506181115444_InitialCreate.cs" />
-    <Compile Include="Migrations\201506181115444_InitialCreate.Designer.cs">
-      <DependentUpon>201506181115444_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\201510061817423_initial.cs" />
+    <Compile Include="Migrations\201510061817423_initial.Designer.cs">
+      <DependentUpon>201510061817423_initial.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201509250904219_systemstatus.cs" />
-    <Compile Include="Migrations\201509250904219_systemstatus.Designer.cs">
-      <DependentUpon>201509250904219_systemstatus.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201509251116284_feiler.cs" />
-    <Compile Include="Migrations\201509251116284_feiler.Designer.cs">
-      <DependentUpon>201509251116284_feiler.cs</DependentUpon>
+    <Compile Include="Migrations\201510061823192_Oppdateringsstatus.cs" />
+    <Compile Include="Migrations\201510061823192_Oppdateringsstatus.Designer.cs">
+      <DependentUpon>201510061823192_Oppdateringsstatus.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\IdentityModels.cs" />
+    <Compile Include="Models\Oppdateringsstatus.cs" />
     <Compile Include="Models\PrisLogg.cs" />
     <Compile Include="Models\Produkt.cs" />
     <Compile Include="Models\ProduktContext.cs" />
     <Compile Include="Models\ProduktDatabaseInitializer.cs" />
     <Compile Include="Models\Stasjon.cs" />
-    <Compile Include="Models\SystemStatus.cs" />
     <Compile Include="Models\Tank.cs" />
     <Compile Include="Models\TankVolum.cs" />
     <Compile Include="Admin\Prislogg.aspx.cs">
@@ -558,14 +554,11 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201506181115444_InitialCreate.resx">
-      <DependentUpon>201506181115444_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510061817423_initial.resx">
+      <DependentUpon>201510061817423_initial.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201509250904219_systemstatus.resx">
-      <DependentUpon>201509250904219_systemstatus.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201509251116284_feiler.resx">
-      <DependentUpon>201509251116284_feiler.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201510061823192_Oppdateringsstatus.resx">
+      <DependentUpon>201510061823192_Oppdateringsstatus.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

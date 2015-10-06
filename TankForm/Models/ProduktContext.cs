@@ -11,6 +11,6 @@ namespace TankForm.Models
         public DbSet<Tank> TankStatus { get; set; }
         public DbSet<TankVolum> TankVolumer { get; set; }
         public DbSet<PrisLogg> Prislogger { get; set; }
-        public DbSet<SystemStatus> SystemStatus { get; set; }
+        public DbSet<Oppdateringsstatus> Oppdateringsstatus { get; set; }
     }
 }

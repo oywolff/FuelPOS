@@ -3,12 +3,12 @@ namespace TankForm.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class systemstatus : DbMigration
+    public partial class Oppdateringsstatus : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.SystemStatus",
+                "dbo.Oppdateringsstatus",
                 c => new
                     {
                         ID = c.Int(nullable: false, identity: true),
@@ -24,7 +24,7 @@ namespace TankForm.Migrations
         
         public override void Down()
         {
-            DropTable("dbo.SystemStatus");
+            DropTable("dbo.Oppdateringsstatus");
         }
     }
 }
